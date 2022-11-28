@@ -14,4 +14,68 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Zaman.h">
+      <Filter>Üst Bilgi Dosyaları</Filter>
+    </ClInclude>
+    <ClInclude Include="Kiyafet.h">
+      <Filter>Üst Bilgi Dosyaları</Filter>
+    </ClInclude>
+    <ClInclude Include="Kisi.h">
+      <Filter>Üst Bilgi Dosyaları</Filter>
+    </ClInclude>
+    <ClInclude Include="Siparis.h">
+      <Filter>Üst Bilgi Dosyaları</Filter>
+    </ClInclude>
+    <ClInclude Include="Yonetici.h">
+      <Filter>Üst Bilgi Dosyaları</Filter>
+    </ClInclude>
+    <ClInclude Include="Kurye.h">
+      <Filter>Üst Bilgi Dosyaları</Filter>
+    </ClInclude>
+    <ClInclude Include="KiyafetList.h">
+      <Filter>Üst Bilgi Dosyaları</Filter>
+    </ClInclude>
+    <ClInclude Include="utilityFunc.h">
+      <Filter>Üst Bilgi Dosyaları</Filter>
+    </ClInclude>
+    <ClInclude Include="KiyafetLinkedList.h">
+      <Filter>Üst Bilgi Dosyaları</Filter>
+    </ClInclude>
+    <ClInclude Include="Kullanici.h">
+      <Filter>Üst Bilgi Dosyaları</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Zaman.cpp">
+      <Filter>Kaynak Dosyalar</Filter>
+    </ClCompile>
+    <ClCompile Include="Kiyafet.cpp">
+      <Filter>Kaynak Dosyalar</Filter>
+    </ClCompile>
+    <ClCompile Include="Kisi.cpp">
+      <Filter>Kaynak Dosyalar</Filter>
+    </ClCompile>
+    <ClCompile Include="Siparis.cpp">
+      <Filter>Kaynak Dosyalar</Filter>
+    </ClCompile>
+    <ClCompile Include="Kullanici.cpp">
+      <Filter>Kaynak Dosyalar</Filter>
+    </ClCompile>
+    <ClCompile Include="Yonetici.cpp">
+      <Filter>Kaynak Dosyalar</Filter>
+    </ClCompile>
+    <ClCompile Include="Kurye.cpp">
+      <Filter>Kaynak Dosyalar</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Kaynak Dosyalar</Filter>
+    </ClCompile>
+    <ClCompile Include="utilityFunc.cpp">
+      <Filter>Kaynak Dosyalar</Filter>
+    </ClCompile>
+    <ClCompile Include="KiyafetLinkedList.cpp">
+      <Filter>Kaynak Dosyalar</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>
