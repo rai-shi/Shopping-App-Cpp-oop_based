@@ -11,7 +11,9 @@ using namespace std;
 
 int main()
 {
-	
+	/*
+	* kiþi kullanýcý utility kontrolü
+	* 
 	Utility utility;
 
 	string sname = "bidi";
@@ -39,6 +41,9 @@ int main()
 	ctarih = utility.stringToChar(starih);
 
 	Kullanici person(cname, cnickname,ceposta,cpassword, ctelno,cadres,ctarih);
+	*/
+
+
 
 
 	

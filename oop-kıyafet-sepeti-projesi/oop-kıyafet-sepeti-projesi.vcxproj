@@ -142,7 +142,6 @@
     <ClInclude Include="Kisi.h" />
     <ClInclude Include="Kiyafet.h" />
     <ClInclude Include="KiyafetLinkedList.h" />
-    <ClInclude Include="KiyafetList.h" />
     <ClInclude Include="Kullanici.h" />
     <ClInclude Include="Kurye.h" />
     <ClInclude Include="Siparis.h" />

@@ -15,10 +15,11 @@ class Utility
 public:
 
 	char* stringToChar(string);
-	// buna da çok da gerek yok ama dursun 
-	string charToString(char*);
+	string charToString(char*); // buna da çok da gerek yok ama dursun 
 
-	string * getTxtContent(string);
+	string * getTxtContent(string,int);
+	int TxtlineCount(string);
+
 	// vector <string*> splitListItems(string[]);
 
 };

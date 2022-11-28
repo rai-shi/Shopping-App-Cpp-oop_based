@@ -33,9 +33,6 @@
     <ClInclude Include="Kurye.h">
       <Filter>Üst Bilgi Dosyaları</Filter>
     </ClInclude>
-    <ClInclude Include="KiyafetList.h">
-      <Filter>Üst Bilgi Dosyaları</Filter>
-    </ClInclude>
     <ClInclude Include="utilityFunc.h">
       <Filter>Üst Bilgi Dosyaları</Filter>
     </ClInclude>

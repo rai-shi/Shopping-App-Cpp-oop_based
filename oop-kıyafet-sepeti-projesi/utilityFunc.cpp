@@ -23,24 +23,46 @@ string Utility::charToString(char* chr)
 	return str;
 }
 
-string *Utility::getTxtContent(string txtName) 
+int Utility::TxtlineCount(string txtName)
 {
-	ifstream read;		
+	ifstream read;
 	string line;
-	string * txtLines = nullptr;
+	int numberOfLines = 0;
+
+	read.open(txtName, ios::app);
+
+	if (read.is_open())
+	{
+		while (!(read.eof()))
+		{
+			getline(read, line);
+			numberOfLines++;
+		}
+	}
+	read.close();
+	return numberOfLines;
+}
+
+string* Utility:: getTxtContent(string txtName, int txtLineCount) 
+{
+	ifstream read;
+	string line;
+	string* txtLines = new string[txtLineCount + 1];  
 	int i = 0;
 
 	read.open(txtName, ios::app);
 
-	if (read.is_open()) 
-	{											
-		while (!(read.eof())) 
-		{											
+	if (read.is_open())
+	{
+		for (int i = 0; i < txtLineCount; i++)
+		{
 			getline(read, line);
-			txtLines[i++] = line; // satýrlarý okudukça birer elaman olarak listeye koy
+			txtLines[i] = line;
 		}
 	}
-	txtLines[i] = "null"; // bitiþi belirtmek için
+	read.close();
 	return txtLines;
 }
 
+
+// vector <string*> splitListItems(string[]);
