@@ -16,7 +16,6 @@ private:
 public:
 	Siparis(int, double); // siparis_no ve siparis_fiyat diðerleri ?
 
-
 };
 
 #endif

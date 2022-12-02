@@ -102,9 +102,52 @@ bool Kullanici::IsSifreValid(string strogness)
     }
 }
 
-bool Kullanici::IsDtarihiValid(string)
+bool Kullanici::IsDtarihiValid(string date) // 2/5/2000 þeklinde gelecek
 {
-    return true;
+    // gelen tarihi bölme kýsmý
+    string ayrac = "-";
+    string line = date;
+    string* splittedDate = new string[3];
+    int pos = 0;
+    int index = 0;
+
+    while ((pos = line.find(ayrac)) != string::npos)
+    {
+        splittedDate[index++] = line.substr(0, pos);
+        line = line.erase(0, pos + ayrac.length());
+    }
+    splittedDate[2] = line;
+     
+    // validation için verilerin atanmasý
+    int day, month, year;
+
+    day = stoi(splittedDate[0]);
+    month = stoi(splittedDate[1]);
+    year = stoi(splittedDate[2]);
+
+    // validation
+    if (1000 <= year <= 3000)
+    {
+        if ((month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) && day > 0 && day <= 31)
+            return true;
+        else
+            if (month == 4 || month == 6 || month == 9 || month == 11 && day > 0 && day <= 30)
+                return true;
+            else
+                if (month == 2)
+                {
+                    if ((year % 400 == 0 || (year % 100 != 0 && year % 4 == 0)) && day > 0 && day <= 29)
+                        return true;
+                    else if (day > 0 && day <= 28)
+                        return true;
+                    else
+                        return false;
+                }
+                else
+                    return false;
+    }
+    else
+        return false;
 }
 
 

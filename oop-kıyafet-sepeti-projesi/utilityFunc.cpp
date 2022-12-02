@@ -65,4 +65,38 @@ string* Utility:: getTxtContent(string txtName, int txtLineCount)
 }
 
 
-// vector <string*> splitListItems(string[]);
+
+
+vector<vector<string>> Utility::splitListItems(string list[], int listSize)
+{
+	string bracket = ",";
+	string line;
+	vector<string> words;
+	vector<vector<string>> lines;
+
+	for (int i = 0; i < listSize; i++)
+	{
+		int pos = 0;
+		int wordsindex = 0;
+
+
+		line = list[i];
+
+
+		while ((pos = line.find(bracket)) != string::npos)
+		{
+			words.push_back(line.substr(0, pos));
+			line = line.erase(0, pos + bracket.length());
+		}
+		words.push_back(line);
+
+		lines.push_back(words);
+
+		for (int j = 0; j < 4; j++)
+		{
+			words.clear();
+		}
+	}
+
+	return lines;
+}

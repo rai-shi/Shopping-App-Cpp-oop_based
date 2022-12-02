@@ -11,18 +11,18 @@ using namespace std;
 
 int main()
 {
-	/*
-	* kiþi kullanýcý utility kontrolü
-	* 
+	
+//  kiþi kullanýcý utility kontrolü
+	
 	Utility utility;
 
 	string sname = "bidi";
 	string snickname = "rai";
 	string seposta = "bidi@hotmail.com";
-	string spassword = "bidi"; //"Raishi1234"
+	string spassword = "Raishi1234"; //"Raishi1234"
 	string stelno = "05061400604";
 	string sadres = "ortahisar";
-	string starih = "12/03/2000";
+	string starih = "12-3-2000";
 
 	char* cname = new char[sname.length()];
 	char* cnickname = new char[snickname.length()];
@@ -41,10 +41,26 @@ int main()
 	ctarih = utility.stringToChar(starih);
 
 	Kullanici person(cname, cnickname,ceposta,cpassword, ctelno,cadres,ctarih);
-	*/
+	
+	int LineCount = utility.TxtlineCount("kiyafetdeposu.txt");
+	string* TxtLines = utility.getTxtContent("kiyafetdeposu.txt",LineCount);
+
+	vector<vector<string>> kiyafetler;
+	kiyafetler =	utility.splitListItems(TxtLines,5);
+
+
+	for (int i = 0; i < LineCount; i++)
+	{
+		for (int j = 0; j < 5; j++)
+		{
+			cout << kiyafetler[i][j] << " ";
+		}
+		cout << endl;
+	}
 
 
 
+	
 
 	
 

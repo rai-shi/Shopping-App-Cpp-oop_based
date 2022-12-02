@@ -4,7 +4,7 @@
 
 #include "Kisi.h"
 
-class Kullanici  : public Kisi
+class Kullanici  : public Kisi // kullanýcý id eklenebilir
 {
 private:
 	// const tanýmlayýp member initialize içerisinde fonksiyon kullanabilme

@@ -6,9 +6,24 @@ Kisi::Kisi(char* ad_soyad, char* telno)
 	setTelNo(telno);
 }
 
-bool Kisi::TelNoValidation(char* telno)
+bool Kisi::TelNoValidation(string telno)
 {
-	return true;
+
+	//regular expression
+	// 1)  05 ile baþlayanlar
+	// 2)  0123456789 ile devam edenler
+	// 3)  11 rakam toplamda
+	const regex pattern("(05)?[0-9]{11}");
+
+	// regex_match() girilen numara ile regular expression arasýndaki uyuma bakacak
+	if (regex_match(telno, pattern))
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
 }
 
 void Kisi::setTelNo(char* telno)

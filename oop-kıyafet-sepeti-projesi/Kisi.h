@@ -3,6 +3,7 @@
 #define KISI_H
 
 #include <iostream>
+#include <regex>
 #include "UtilityFunc.h"
 
 using namespace std;
@@ -16,7 +17,7 @@ private :
 
 
 	// utility function
-	bool TelNoValidation(char*); // setTelno içerisinde çaðrýlacak
+	bool TelNoValidation(string); // setTelno içerisinde çaðrýlacak
 
 public:
 	Kisi(char*, char*);

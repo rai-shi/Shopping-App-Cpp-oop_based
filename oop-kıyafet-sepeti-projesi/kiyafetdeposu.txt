@@ -1,0 +1,4 @@
+elbise,3,xl,mavi,6
+tshirt,7,l,sari,6
+pantolon,3,s,kirmizi,6
+etek,3,m,yesil,6

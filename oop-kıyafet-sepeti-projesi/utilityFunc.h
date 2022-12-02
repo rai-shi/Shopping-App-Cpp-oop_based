@@ -20,7 +20,8 @@ public:
 	string * getTxtContent(string,int);
 	int TxtlineCount(string);
 
-	// vector <string*> splitListItems(string[]);
+	vector<vector<string>> splitListItems(string list[], int listSize);
+
 
 };
 #endif

@@ -20,8 +20,6 @@ public:
 	void setSýfre(char*);
 	char* getSifre();
 
-
-
 };
 
 #endif

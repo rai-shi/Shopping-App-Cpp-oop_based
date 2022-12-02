@@ -75,4 +75,9 @@
       <Filter>Kaynak Dosyalar</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="kiyafetdeposu.txt">
+      <Filter>Kaynak Dosyaları</Filter>
+    </Text>
+  </ItemGroup>
 </Project>
